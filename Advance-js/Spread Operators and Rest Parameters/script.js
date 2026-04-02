@@ -17,3 +17,18 @@ function sum(...num) {
 sum(1, 2, 3);
 
 console.log(total);
+
+let orignal = [1, 2, 3, 4];
+let copy = [...orignal];
+copy.push(4);
+console.log(orignal);
+console.log(copy);
+
+let user = {
+  name: "sajid",
+  age: 20,
+};
+
+let copyUser = { ...user };
+
+console.log(copyUser);

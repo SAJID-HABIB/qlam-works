@@ -1,14 +1,9 @@
-function mul (a) {
-  
+function mul(a) {
   return function mul1(b) {
-    
-    for (let count = 1; count < 11; count++) {
-       console.log(" 6  x " + a  *  count);
+    for (let i = 1; i < 11; i++) {
+      console.log(" 6  x", i, "=" + a * i);
     }
-  }
-
+  };
 }
-
-
 
 mul(6)();
