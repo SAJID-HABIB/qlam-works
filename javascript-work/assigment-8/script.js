@@ -94,38 +94,18 @@ function deletColIndex() {
 }
 
 
-addColorStart()
-.then((updatedArray1) => {
-  console.log(updatedArray1);
-  return addColorEnd();
-})
-.then((updatedArray2) => {
-  console.log(updatedArray2);
-  return addColorStart();
-})
-.then((updatedArray3) => {
-console.log(updatedArray3);
-return deleteFirst();
-})
-.then((updatedArray4) => {
-  console.log(updatedArray4);
-  return deleteLast();  
-})
-.then((updatedArray5) => {
-  console.log(updatedArray5);
-  return addColIndex();
-})
-.then((updatedArray6) => {
-  console.log(updatedArray6);
-  return deletColIndex();
-})
-.then((updatedArray7) => {
-  console.log(updatedArray7);
-  
-})
-.catch((errFc1) => {
-  console.error("Error :",errFc1);  
-})
-.catch((errFc2) => {
-  console.error("Error :",errFc2);  
-});
+async function runClor() {
+  try {
+    let updatedArray1 = await addColorEnd()
+    console.log(updatedArray1);
+
+    let updatedArray2 = await addColorStart();
+    console.log(updatedArray2);
+    
+    
+  } catch (error) {
+    
+  }
+}
+
+runClor();
